@@ -1,0 +1,493 @@
+@prefix : <http://lumii.lv/ontologies/UnivExample.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://lumii.lv/ontologies/UnivExample.owl#> .
+
+<http://lumii.lv/ontologies/UnivExample.owl> rdf:type owl:Ontology ;
+                                              <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "buildExtInfo(@T,@N)=concat(@T,' (',@N,')')" ;
+                                              rdfs:Comment "OBIS CAiSE 2015 Demo Full version, With RDB2OWL back-end" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://obis.lumii.lv/2013/01/obis#defaultOrder
+<http://obis.lumii.lv/2013/01/obis#defaultOrder> rdf:type owl:AnnotationProperty .
+
+
+###  http://obis.lumii.lv/2013/01/obis#isAbstract
+<http://obis.lumii.lv/2013/01/obis#isAbstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://obis.lumii.lv/2013/01/obis#isDerived
+<http://obis.lumii.lv/2013/01/obis#isDerived> rdf:type owl:AnnotationProperty .
+
+
+###  http://obis.lumii.lv/2013/01/obis#isEnumerated
+<http://obis.lumii.lv/2013/01/obis#isEnumerated> rdf:type owl:AnnotationProperty .
+
+
+###  http://obis.lumii.lv/2013/01/obis#textPattern
+<http://obis.lumii.lv/2013/01/obis#textPattern> rdf:type owl:AnnotationProperty .
+
+
+###  http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr
+<http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#Comment
+rdfs:Comment rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://lumii.lv/ontologies/UnivExample.owl#course
+:course rdf:type owl:ObjectProperty ;
+        rdfs:domain :Registration ;
+        rdfs:range :Course ;
+        <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "->" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#enrolled
+:enrolled rdf:type owl:ObjectProperty ;
+          rdfs:domain :Student ;
+          rdfs:range :AcademicProgram ;
+          <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "->" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#facultyLevel
+:facultyLevel rdf:type owl:ObjectProperty ;
+              rdfs:domain :Teacher ;
+              rdfs:range :FacultyLevel ;
+              <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "->" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#includes
+:includes rdf:type owl:ObjectProperty ;
+          rdfs:domain :AcademicProgram ;
+          rdfs:range :Course ;
+          <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "=>" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#nationality
+:nationality rdf:type owl:ObjectProperty ;
+             rdfs:domain :Person ;
+             rdfs:range :Nationality ;
+             <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "[[Student]]->" ,
+                                                               "[[Teacher]]->" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#student
+:student rdf:type owl:ObjectProperty ;
+         rdfs:domain :Registration ;
+         rdfs:range :Student ;
+         <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "->" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#takes
+:takes rdf:type owl:ObjectProperty ;
+       rdfs:domain :Student ;
+       rdfs:range :Course ;
+       owl:propertyDisjointWith :teaches ;
+       <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "=>Registration:(DatePaid is not null)->" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#teaches
+:teaches rdf:type owl:ObjectProperty ;
+         rdfs:domain :Teacher ;
+         rdfs:range :Course ;
+         <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "->" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://lumii.lv/ontologies/UnivExample.owl#acadTitle
+:acadTitle rdf:type owl:DatatypeProperty ;
+           rdfs:domain :FacultyLevel ;
+           <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Level_Code" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#courseCode
+:courseCode rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Course ;
+            <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Code" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#courseCredits
+:courseCredits rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Course ;
+               rdfs:range [ rdf:type rdfs:Datatype ;
+                            owl:onDatatype xsd:integer ;
+                            owl:withRestrictions ( [ xsd:minExclusive 0
+                                                   ]
+                                                 )
+                          ] ;
+               <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Credits" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#courseExtInfo
+:courseExtInfo rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Course ;
+               <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "buildExtInfo(Code,Credits)" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#courseName
+:courseName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Course ;
+            <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Name" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#dateCompleted
+:dateCompleted rdf:type owl:DatatypeProperty ;
+               rdfs:domain :CompletedRegistration ;
+               rdfs:range xsd:dateTime ;
+               <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "DateCompleted" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#datePaid
+:datePaid rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Registration ;
+          rdfs:range xsd:dateTime ;
+          <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "DatePaid" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#mark
+:mark rdf:type owl:DatatypeProperty ;
+      rdfs:domain :CompletedRegistration ;
+      rdfs:range [ rdf:type rdfs:Datatype ;
+                   owl:onDatatype xsd:integer ;
+                   owl:withRestrictions ( [ xsd:minInclusive 0
+                                          ]
+                                          [ xsd:maxInclusive 10
+                                          ]
+                                        )
+                 ] ;
+      <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "MarkReceived" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#nCode
+:nCode rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Nationality ;
+       <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Code" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#nValue
+:nValue rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Nationality ;
+        <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Value" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#personID
+:personID rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Person ;
+          <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "[[Student]].IDCode" ,
+                                                            "[[Teacher]].IDCode" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#personName
+:personName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Person ;
+            <http://obis.lumii.lv/2013/01/obis#isDerived> "true" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#programName
+:programName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :AcademicProgram ;
+             <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Name" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#salary
+:salary rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Teacher ;
+        rdfs:range [ rdf:type rdfs:Datatype ;
+                     owl:onDatatype xsd:decimal ;
+                     owl:withRestrictions ( [ xsd:minExclusive 0
+                                            ]
+                                          )
+                   ] ;
+        <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Salary" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#studentName
+:studentName rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :personName ;
+             rdfs:domain :Student ;
+             <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Name" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#studentNumber
+:studentNumber rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Student ;
+               <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "StudNumber" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#teacherName
+:teacherName rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :personName ;
+             rdfs:domain :Teacher ;
+             <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Name" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram
+:AcademicProgram rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :programName ;
+                                   owl:cardinality "1"^^xsd:nonNegativeInteger
+                                 ] ;
+                 <http://obis.lumii.lv/2013/01/obis#defaultOrder> "programName" ;
+                 <http://obis.lumii.lv/2013/01/obis#isEnumerated> "true" ;
+                 <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "XProgram" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#Assistant
+:Assistant rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( :Teacher
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :facultyLevel ;
+                                                        owl:hasValue :Level_Assistant
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+           rdfs:subClassOf :Teacher ;
+           owl:disjointWith :Professor ;
+           <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "[[Teacher]];Level_Code='Assistant'" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#CompletedRegistration
+:CompletedRegistration rdf:type owl:Class ;
+                       rdfs:subClassOf :Registration ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :dateCompleted ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange xsd:dateTime
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :mark ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                           owl:onDatatype xsd:integer ;
+                                                           owl:withRestrictions ( [ xsd:minInclusive 0
+                                                                                  ]
+                                                                                  [ xsd:maxInclusive 10
+                                                                                  ]
+                                                                                )
+                                                         ]
+                                       ] ;
+                       <http://obis.lumii.lv/2013/01/obis#defaultOrder> "dateCompleted,mark" ;
+                       <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "[[Registration]] ?Out" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#Course
+:Course rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :courseCode ;
+                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :courseCredits ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                            owl:onDatatype xsd:integer ;
+                                            owl:withRestrictions ( [ xsd:minExclusive 0
+                                                                   ]
+                                                                 )
+                                          ]
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :courseExtInfo ;
+                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :courseName ;
+                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                        ] ;
+        <http://obis.lumii.lv/2013/01/obis#defaultOrder> "courseName,courseCode,courseCredits,courseExtInfo" ;
+        <http://obis.lumii.lv/2013/01/obis#textPattern> "{courseCode} ({courseCredits}) - {courseName}" ;
+        <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "XCourse" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#FacultyLevel
+:FacultyLevel rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :acadTitle ;
+                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                              ] ;
+              <http://obis.lumii.lv/2013/01/obis#defaultOrder> "acadTitle" ;
+              <http://obis.lumii.lv/2013/01/obis#isEnumerated> "true" ;
+              <http://obis.lumii.lv/2013/01/obis#textPattern> "{nCode} - {nValue}" ;
+              <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Teacher_Level {uri=('Level_', Level_Code)}" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#MandatoryCourse
+:MandatoryCourse rdf:type owl:Class ;
+                 rdfs:subClassOf :Course ;
+                 owl:disjointWith :OptionalCourse ;
+                 <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "[[Course]]; Required=1" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#Nationality
+:Nationality rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :nCode ;
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :nValue ;
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                             ] ;
+             <http://obis.lumii.lv/2013/01/obis#defaultOrder> "nCode,nValue" ;
+             <http://obis.lumii.lv/2013/01/obis#isEnumerated> "true" ;
+             <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Nationality" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#OptionalCourse
+:OptionalCourse rdf:type owl:Class ;
+                rdfs:subClassOf :Course ;
+                <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "[[Course]]; Required=0" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :nationality ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Nationality
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :personID ;
+                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :personName ;
+                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                        ] ;
+        <http://obis.lumii.lv/2013/01/obis#defaultOrder> "personName,personID,nationality" ;
+        <http://obis.lumii.lv/2013/01/obis#isAbstract> "true" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#Professor
+:Professor rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( :Teacher
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :facultyLevel ;
+                                                        owl:hasValue :Level_Professor
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+           rdfs:subClassOf :Teacher ;
+           <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "[[Teacher]];Level_Code='Professor'" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#Registration
+:Registration rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :course ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Course
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :student ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Student
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :datePaid ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:dateTime
+                              ] ;
+              <http://obis.lumii.lv/2013/01/obis#defaultOrder> "datePaid" ;
+              <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Registration" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#Student
+:Student rdf:type owl:Class ;
+         rdfs:subClassOf :Person ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :enrolled ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :AcademicProgram
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :studentName ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :studentNumber ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ;
+         <http://obis.lumii.lv/2013/01/obis#defaultOrder> "studentName,studentNumber" ;
+         <http://obis.lumii.lv/2013/01/obis#textPattern> "{studentName}" ;
+         <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "XStudent" .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#Teacher
+:Teacher rdf:type owl:Class ;
+         rdfs:subClassOf :Person ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :facultyLevel ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :FacultyLevel
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :teacherName ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :salary ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                             owl:onDatatype xsd:decimal ;
+                                             owl:withRestrictions ( [ xsd:minExclusive 0
+                                                                    ]
+                                                                  )
+                                           ]
+                         ] ;
+         <http://obis.lumii.lv/2013/01/obis#defaultOrder> "teacherName,salary,facultyLevel" ;
+         <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "XTeacher" .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://lumii.lv/ontologies/UnivExample.owl#Level_Assistant
+:Level_Assistant rdf:type owl:NamedIndividual .
+
+
+###  http://lumii.lv/ontologies/UnivExample.owl#Level_Professor
+:Level_Professor rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AcademicProgram
+                :Course
+                :FacultyLevel
+                :Nationality
+                :Person
+                :Registration
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

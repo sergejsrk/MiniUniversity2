@@ -1,0 +1,500 @@
+<http://lumii.lv/ontologies/UnivExample.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://lumii.lv/ontologies/UnivExample.owl> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "buildExtInfo(@T,@N)=concat(@T,' (',@N,')')" .
+<http://lumii.lv/ontologies/UnivExample.owl> <http://www.w3.org/2000/01/rdf-schema#Comment> "OBIS CAiSE 2015 Demo Full version, With RDB2OWL back-end" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://obis.lumii.lv/2013/01/obis#defaultOrder
+<http://obis.lumii.lv/2013/01/obis#defaultOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://obis.lumii.lv/2013/01/obis#isAbstract
+<http://obis.lumii.lv/2013/01/obis#isAbstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://obis.lumii.lv/2013/01/obis#isDerived
+<http://obis.lumii.lv/2013/01/obis#isDerived> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://obis.lumii.lv/2013/01/obis#isEnumerated
+<http://obis.lumii.lv/2013/01/obis#isEnumerated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://obis.lumii.lv/2013/01/obis#textPattern
+<http://obis.lumii.lv/2013/01/obis#textPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr
+<http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Comment
+<http://www.w3.org/2000/01/rdf-schema#Comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#course
+<http://lumii.lv/ontologies/UnivExample.owl#course> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#course> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Registration> .
+<http://lumii.lv/ontologies/UnivExample.owl#course> <http://www.w3.org/2000/01/rdf-schema#range> <http://lumii.lv/ontologies/UnivExample.owl#Course> .
+<http://lumii.lv/ontologies/UnivExample.owl#course> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "->" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#enrolled
+<http://lumii.lv/ontologies/UnivExample.owl#enrolled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#enrolled> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Student> .
+<http://lumii.lv/ontologies/UnivExample.owl#enrolled> <http://www.w3.org/2000/01/rdf-schema#range> <http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram> .
+<http://lumii.lv/ontologies/UnivExample.owl#enrolled> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "->" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#facultyLevel
+<http://lumii.lv/ontologies/UnivExample.owl#facultyLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#facultyLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Teacher> .
+<http://lumii.lv/ontologies/UnivExample.owl#facultyLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://lumii.lv/ontologies/UnivExample.owl#FacultyLevel> .
+<http://lumii.lv/ontologies/UnivExample.owl#facultyLevel> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "->" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#includes
+<http://lumii.lv/ontologies/UnivExample.owl#includes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#includes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram> .
+<http://lumii.lv/ontologies/UnivExample.owl#includes> <http://www.w3.org/2000/01/rdf-schema#range> <http://lumii.lv/ontologies/UnivExample.owl#Course> .
+<http://lumii.lv/ontologies/UnivExample.owl#includes> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "=>" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#nationality
+<http://lumii.lv/ontologies/UnivExample.owl#nationality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#nationality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Person> .
+<http://lumii.lv/ontologies/UnivExample.owl#nationality> <http://www.w3.org/2000/01/rdf-schema#range> <http://lumii.lv/ontologies/UnivExample.owl#Nationality> .
+<http://lumii.lv/ontologies/UnivExample.owl#nationality> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "[[Student]]->" .
+<http://lumii.lv/ontologies/UnivExample.owl#nationality> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "[[Teacher]]->" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#student
+<http://lumii.lv/ontologies/UnivExample.owl#student> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#student> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Registration> .
+<http://lumii.lv/ontologies/UnivExample.owl#student> <http://www.w3.org/2000/01/rdf-schema#range> <http://lumii.lv/ontologies/UnivExample.owl#Student> .
+<http://lumii.lv/ontologies/UnivExample.owl#student> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "->" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#takes
+<http://lumii.lv/ontologies/UnivExample.owl#takes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#takes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Student> .
+<http://lumii.lv/ontologies/UnivExample.owl#takes> <http://www.w3.org/2000/01/rdf-schema#range> <http://lumii.lv/ontologies/UnivExample.owl#Course> .
+<http://lumii.lv/ontologies/UnivExample.owl#takes> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://lumii.lv/ontologies/UnivExample.owl#teaches> .
+<http://lumii.lv/ontologies/UnivExample.owl#takes> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "=>Registration:(DatePaid is not null)->" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#teaches
+<http://lumii.lv/ontologies/UnivExample.owl#teaches> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#teaches> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Teacher> .
+<http://lumii.lv/ontologies/UnivExample.owl#teaches> <http://www.w3.org/2000/01/rdf-schema#range> <http://lumii.lv/ontologies/UnivExample.owl#Course> .
+<http://lumii.lv/ontologies/UnivExample.owl#teaches> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "->" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#acadTitle
+<http://lumii.lv/ontologies/UnivExample.owl#acadTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#acadTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#FacultyLevel> .
+<http://lumii.lv/ontologies/UnivExample.owl#acadTitle> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Level_Code" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#courseCode
+<http://lumii.lv/ontologies/UnivExample.owl#courseCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#courseCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Course> .
+<http://lumii.lv/ontologies/UnivExample.owl#courseCode> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Code" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#courseCredits
+<http://lumii.lv/ontologies/UnivExample.owl#courseCredits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#courseCredits> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Course> .
+<http://lumii.lv/ontologies/UnivExample.owl#courseCredits> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2001/XMLSchema#minExclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://lumii.lv/ontologies/UnivExample.owl#courseCredits> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Credits" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#courseExtInfo
+<http://lumii.lv/ontologies/UnivExample.owl#courseExtInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#courseExtInfo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Course> .
+<http://lumii.lv/ontologies/UnivExample.owl#courseExtInfo> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "buildExtInfo(Code,Credits)" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#courseName
+<http://lumii.lv/ontologies/UnivExample.owl#courseName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#courseName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Course> .
+<http://lumii.lv/ontologies/UnivExample.owl#courseName> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Name" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#dateCompleted
+<http://lumii.lv/ontologies/UnivExample.owl#dateCompleted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#dateCompleted> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#CompletedRegistration> .
+<http://lumii.lv/ontologies/UnivExample.owl#dateCompleted> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://lumii.lv/ontologies/UnivExample.owl#dateCompleted> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "DateCompleted" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#datePaid
+<http://lumii.lv/ontologies/UnivExample.owl#datePaid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#datePaid> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Registration> .
+<http://lumii.lv/ontologies/UnivExample.owl#datePaid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://lumii.lv/ontologies/UnivExample.owl#datePaid> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "DatePaid" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#mark
+<http://lumii.lv/ontologies/UnivExample.owl#mark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#mark> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#CompletedRegistration> .
+<http://lumii.lv/ontologies/UnivExample.owl#mark> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
+_:genid6 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
+_:genid8 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://lumii.lv/ontologies/UnivExample.owl#mark> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "MarkReceived" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#nCode
+<http://lumii.lv/ontologies/UnivExample.owl#nCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#nCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Nationality> .
+<http://lumii.lv/ontologies/UnivExample.owl#nCode> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Code" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#nValue
+<http://lumii.lv/ontologies/UnivExample.owl#nValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#nValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Nationality> .
+<http://lumii.lv/ontologies/UnivExample.owl#nValue> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Value" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#personID
+<http://lumii.lv/ontologies/UnivExample.owl#personID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#personID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Person> .
+<http://lumii.lv/ontologies/UnivExample.owl#personID> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "[[Student]].IDCode" .
+<http://lumii.lv/ontologies/UnivExample.owl#personID> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "[[Teacher]].IDCode" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#personName
+<http://lumii.lv/ontologies/UnivExample.owl#personName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#personName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Person> .
+<http://lumii.lv/ontologies/UnivExample.owl#personName> <http://obis.lumii.lv/2013/01/obis#isDerived> "true" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#programName
+<http://lumii.lv/ontologies/UnivExample.owl#programName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#programName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram> .
+<http://lumii.lv/ontologies/UnivExample.owl#programName> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Name" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#salary
+<http://lumii.lv/ontologies/UnivExample.owl#salary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#salary> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Teacher> .
+<http://lumii.lv/ontologies/UnivExample.owl#salary> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2001/XMLSchema#minExclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://lumii.lv/ontologies/UnivExample.owl#salary> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Salary" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#studentName
+<http://lumii.lv/ontologies/UnivExample.owl#studentName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#studentName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lumii.lv/ontologies/UnivExample.owl#personName> .
+<http://lumii.lv/ontologies/UnivExample.owl#studentName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Student> .
+<http://lumii.lv/ontologies/UnivExample.owl#studentName> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Name" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#studentNumber
+<http://lumii.lv/ontologies/UnivExample.owl#studentNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#studentNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Student> .
+<http://lumii.lv/ontologies/UnivExample.owl#studentNumber> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "StudNumber" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#teacherName
+<http://lumii.lv/ontologies/UnivExample.owl#teacherName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://lumii.lv/ontologies/UnivExample.owl#teacherName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://lumii.lv/ontologies/UnivExample.owl#personName> .
+<http://lumii.lv/ontologies/UnivExample.owl#teacherName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://lumii.lv/ontologies/UnivExample.owl#Teacher> .
+<http://lumii.lv/ontologies/UnivExample.owl#teacherName> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Name" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram
+<http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#programName> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram> <http://obis.lumii.lv/2013/01/obis#defaultOrder> "programName" .
+<http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram> <http://obis.lumii.lv/2013/01/obis#isEnumerated> "true" .
+<http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "XProgram" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#Assistant
+<http://lumii.lv/ontologies/UnivExample.owl#Assistant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/UnivExample.owl#Assistant> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#hasValue> <http://lumii.lv/ontologies/UnivExample.owl#Level_Assistant> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#facultyLevel> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lumii.lv/ontologies/UnivExample.owl#Teacher> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://lumii.lv/ontologies/UnivExample.owl#Assistant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lumii.lv/ontologies/UnivExample.owl#Teacher> .
+<http://lumii.lv/ontologies/UnivExample.owl#Assistant> <http://www.w3.org/2002/07/owl#disjointWith> <http://lumii.lv/ontologies/UnivExample.owl#Professor> .
+<http://lumii.lv/ontologies/UnivExample.owl#Assistant> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "[[Teacher]];Level_Code='Assistant'" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#CompletedRegistration
+<http://lumii.lv/ontologies/UnivExample.owl#CompletedRegistration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/UnivExample.owl#CompletedRegistration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lumii.lv/ontologies/UnivExample.owl#Registration> .
+<http://lumii.lv/ontologies/UnivExample.owl#CompletedRegistration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid17 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#dateCompleted> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#CompletedRegistration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#onDataRange> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid18 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#mark> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#CompletedRegistration> <http://obis.lumii.lv/2013/01/obis#defaultOrder> "dateCompleted,mark" .
+<http://lumii.lv/ontologies/UnivExample.owl#CompletedRegistration> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "[[Registration]] ?Out" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#Course
+<http://lumii.lv/ontologies/UnivExample.owl#Course> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/UnivExample.owl#Course> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#courseCode> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#Course> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#onDataRange> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2001/XMLSchema#minExclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid25 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#courseCredits> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#Course> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#courseExtInfo> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#Course> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#courseName> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#Course> <http://obis.lumii.lv/2013/01/obis#defaultOrder> "courseName,courseCode,courseCredits,courseExtInfo" .
+<http://lumii.lv/ontologies/UnivExample.owl#Course> <http://obis.lumii.lv/2013/01/obis#textPattern> "{courseCode} ({courseCredits}) - {courseName}" .
+<http://lumii.lv/ontologies/UnivExample.owl#Course> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "XCourse" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#FacultyLevel
+<http://lumii.lv/ontologies/UnivExample.owl#FacultyLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/UnivExample.owl#FacultyLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#acadTitle> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#FacultyLevel> <http://obis.lumii.lv/2013/01/obis#defaultOrder> "acadTitle" .
+<http://lumii.lv/ontologies/UnivExample.owl#FacultyLevel> <http://obis.lumii.lv/2013/01/obis#isEnumerated> "true" .
+<http://lumii.lv/ontologies/UnivExample.owl#FacultyLevel> <http://obis.lumii.lv/2013/01/obis#textPattern> "{nCode} - {nValue}" .
+<http://lumii.lv/ontologies/UnivExample.owl#FacultyLevel> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Teacher_Level {uri=('Level_', Level_Code)}" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#MandatoryCourse
+<http://lumii.lv/ontologies/UnivExample.owl#MandatoryCourse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/UnivExample.owl#MandatoryCourse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lumii.lv/ontologies/UnivExample.owl#Course> .
+<http://lumii.lv/ontologies/UnivExample.owl#MandatoryCourse> <http://www.w3.org/2002/07/owl#disjointWith> <http://lumii.lv/ontologies/UnivExample.owl#OptionalCourse> .
+<http://lumii.lv/ontologies/UnivExample.owl#MandatoryCourse> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "[[Course]]; Required=1" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#Nationality
+<http://lumii.lv/ontologies/UnivExample.owl#Nationality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/UnivExample.owl#Nationality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#nCode> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#Nationality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#nValue> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#Nationality> <http://obis.lumii.lv/2013/01/obis#defaultOrder> "nCode,nValue" .
+<http://lumii.lv/ontologies/UnivExample.owl#Nationality> <http://obis.lumii.lv/2013/01/obis#isEnumerated> "true" .
+<http://lumii.lv/ontologies/UnivExample.owl#Nationality> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Nationality" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#OptionalCourse
+<http://lumii.lv/ontologies/UnivExample.owl#OptionalCourse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/UnivExample.owl#OptionalCourse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lumii.lv/ontologies/UnivExample.owl#Course> .
+<http://lumii.lv/ontologies/UnivExample.owl#OptionalCourse> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "[[Course]]; Required=0" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#Person
+<http://lumii.lv/ontologies/UnivExample.owl#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/UnivExample.owl#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#onClass> <http://lumii.lv/ontologies/UnivExample.owl#Nationality> .
+_:genid34 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#nationality> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#personID> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#personName> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#Person> <http://obis.lumii.lv/2013/01/obis#defaultOrder> "personName,personID,nationality" .
+<http://lumii.lv/ontologies/UnivExample.owl#Person> <http://obis.lumii.lv/2013/01/obis#isAbstract> "true" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#Professor
+<http://lumii.lv/ontologies/UnivExample.owl#Professor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/UnivExample.owl#Professor> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid37 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#hasValue> <http://lumii.lv/ontologies/UnivExample.owl#Level_Professor> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#facultyLevel> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lumii.lv/ontologies/UnivExample.owl#Teacher> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://lumii.lv/ontologies/UnivExample.owl#Professor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lumii.lv/ontologies/UnivExample.owl#Teacher> .
+<http://lumii.lv/ontologies/UnivExample.owl#Professor> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "[[Teacher]];Level_Code='Professor'" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#Registration
+<http://lumii.lv/ontologies/UnivExample.owl#Registration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/UnivExample.owl#Registration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#onClass> <http://lumii.lv/ontologies/UnivExample.owl#Course> .
+_:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#course> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#Registration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#onClass> <http://lumii.lv/ontologies/UnivExample.owl#Student> .
+_:genid42 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#student> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#Registration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid43 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#datePaid> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#Registration> <http://obis.lumii.lv/2013/01/obis#defaultOrder> "datePaid" .
+<http://lumii.lv/ontologies/UnivExample.owl#Registration> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "Registration" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#Student
+<http://lumii.lv/ontologies/UnivExample.owl#Student> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/UnivExample.owl#Student> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lumii.lv/ontologies/UnivExample.owl#Person> .
+<http://lumii.lv/ontologies/UnivExample.owl#Student> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#onClass> <http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram> .
+_:genid44 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#enrolled> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#Student> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#studentName> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#Student> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#studentNumber> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#Student> <http://obis.lumii.lv/2013/01/obis#defaultOrder> "studentName,studentNumber" .
+<http://lumii.lv/ontologies/UnivExample.owl#Student> <http://obis.lumii.lv/2013/01/obis#textPattern> "{studentName}" .
+<http://lumii.lv/ontologies/UnivExample.owl#Student> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "XStudent" .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#Teacher
+<http://lumii.lv/ontologies/UnivExample.owl#Teacher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lumii.lv/ontologies/UnivExample.owl#Teacher> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lumii.lv/ontologies/UnivExample.owl#Person> .
+<http://lumii.lv/ontologies/UnivExample.owl#Teacher> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#onClass> <http://lumii.lv/ontologies/UnivExample.owl#FacultyLevel> .
+_:genid47 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#facultyLevel> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#Teacher> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#teacherName> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#Teacher> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#onDataRange> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/2001/XMLSchema#minExclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid49 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://lumii.lv/ontologies/UnivExample.owl#salary> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://lumii.lv/ontologies/UnivExample.owl#Teacher> <http://obis.lumii.lv/2013/01/obis#defaultOrder> "teacherName,salary,facultyLevel" .
+<http://lumii.lv/ontologies/UnivExample.owl#Teacher> <http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr> "XTeacher" .
+# 
+# http://www.w3.org/2002/07/owl#Thing
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#Level_Assistant
+<http://lumii.lv/ontologies/UnivExample.owl#Level_Assistant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://lumii.lv/ontologies/UnivExample.owl#Level_Professor
+<http://lumii.lv/ontologies/UnivExample.owl#Level_Professor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid53 <http://www.w3.org/2002/07/owl#members> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lumii.lv/ontologies/UnivExample.owl#Registration> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lumii.lv/ontologies/UnivExample.owl#Person> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lumii.lv/ontologies/UnivExample.owl#Nationality> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lumii.lv/ontologies/UnivExample.owl#FacultyLevel> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lumii.lv/ontologies/UnivExample.owl#Course> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

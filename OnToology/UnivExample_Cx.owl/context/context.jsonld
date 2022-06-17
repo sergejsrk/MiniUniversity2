@@ -1,0 +1,152 @@
+{
+  "@context" : {
+    "teaches" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#teaches",
+      "@type" : "@id"
+    },
+    "facultyLevel" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#facultyLevel",
+      "@type" : "@id"
+    },
+    "courseCredits" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#courseCredits"
+    },
+    "Professor" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Professor"
+    },
+    "includes" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#includes",
+      "@type" : "@id"
+    },
+    "defaultOrder" : {
+      "@id" : "http://obis.lumii.lv/2013/01/obis#defaultOrder"
+    },
+    "Comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Comment"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "acadTitle" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#acadTitle"
+    },
+    "textPattern" : {
+      "@id" : "http://obis.lumii.lv/2013/01/obis#textPattern"
+    },
+    "Course" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Course"
+    },
+    "Teacher" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Teacher"
+    },
+    "datePaid" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#datePaid",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "dateCompleted" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#dateCompleted",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "DBExpr" : {
+      "@id" : "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr"
+    },
+    "isDerived" : {
+      "@id" : "http://obis.lumii.lv/2013/01/obis#isDerived"
+    },
+    "salary" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#salary"
+    },
+    "CompletedRegistration" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#CompletedRegistration"
+    },
+    "teacherName" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#teacherName"
+    },
+    "takes" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#takes",
+      "@type" : "@id"
+    },
+    "Assistant" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Assistant"
+    },
+    "isAbstract" : {
+      "@id" : "http://obis.lumii.lv/2013/01/obis#isAbstract"
+    },
+    "courseCode" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#courseCode"
+    },
+    "Nationality" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Nationality"
+    },
+    "Person" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Person"
+    },
+    "MandatoryCourse" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#MandatoryCourse"
+    },
+    "studentNumber" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#studentNumber"
+    },
+    "isEnumerated" : {
+      "@id" : "http://obis.lumii.lv/2013/01/obis#isEnumerated"
+    },
+    "personName" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#personName"
+    },
+    "courseName" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#courseName"
+    },
+    "student" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#student",
+      "@type" : "@id"
+    },
+    "courseExtInfo" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#courseExtInfo"
+    },
+    "OptionalCourse" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#OptionalCourse"
+    },
+    "nValue" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#nValue"
+    },
+    "AcademicProgram" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram"
+    },
+    "programName" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#programName"
+    },
+    "FacultyLevel" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#FacultyLevel"
+    },
+    "personID" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#personID"
+    },
+    "studentName" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#studentName"
+    },
+    "Registration" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Registration"
+    },
+    "enrolled" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#enrolled",
+      "@type" : "@id"
+    },
+    "nCode" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#nCode"
+    },
+    "Student" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Student"
+    },
+    "mark" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#mark"
+    },
+    "course" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#course",
+      "@type" : "@id"
+    },
+    "nationality" : {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#nationality",
+      "@type" : "@id"
+    }
+  }
+}
