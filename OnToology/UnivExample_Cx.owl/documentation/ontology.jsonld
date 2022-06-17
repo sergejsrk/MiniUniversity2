@@ -1,0 +1,947 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "http://www.w3.org/2001/XMLSchema#minExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#programName"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Teacher"
+    }, {
+      "@id" : "_:genid15"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Level_Assistant"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#facultyLevel"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#dateCompleted"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid19"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#mark"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid23"
+    }, {
+      "@id" : "_:genid21"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "10"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#courseCode"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid26"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#courseCredits"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid28"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "http://www.w3.org/2001/XMLSchema#minExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#courseExtInfo"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "http://www.w3.org/2001/XMLSchema#minExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#courseName"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#acadTitle"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#nCode"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#nValue"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Nationality"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#nationality"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#personID"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#personName"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Teacher"
+    }, {
+      "@id" : "_:genid39"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Level_Professor"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#facultyLevel"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid8"
+    }, {
+      "@id" : "_:genid6"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Course"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#course"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Student"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#student"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#datePaid"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#enrolled"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#studentName"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#studentNumber"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#FacultyLevel"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#facultyLevel"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#teacherName"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid50"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#salary"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid52"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "http://www.w3.org/2001/XMLSchema#minExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram"
+    }, {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Course"
+    }, {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#FacultyLevel"
+    }, {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Nationality"
+    }, {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Person"
+    }, {
+      "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Registration"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "10"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid11"
+    } ]
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "buildExtInfo(@T,@N)=concat(@T,' (',@N,')')"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#Comment" : [ {
+    "@value" : "OBIS CAiSE 2015 Demo Full version, With RDB2OWL back-end"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://obis.lumii.lv/2013/01/obis#defaultOrder" : [ {
+    "@value" : "programName"
+  } ],
+  "http://obis.lumii.lv/2013/01/obis#isEnumerated" : [ {
+    "@value" : "true"
+  } ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "XProgram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Assistant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "[[Teacher]];Level_Code='Assistant'"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Teacher"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Professor"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#CompletedRegistration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://obis.lumii.lv/2013/01/obis#defaultOrder" : [ {
+    "@value" : "dateCompleted,mark"
+  } ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "[[Registration]] ?Out"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Registration"
+  }, {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Course",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://obis.lumii.lv/2013/01/obis#defaultOrder" : [ {
+    "@value" : "courseName,courseCode,courseCredits,courseExtInfo"
+  } ],
+  "http://obis.lumii.lv/2013/01/obis#textPattern" : [ {
+    "@value" : "{courseCode} ({courseCredits}) - {courseName}"
+  } ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "XCourse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid24"
+  }, {
+    "@id" : "_:genid25"
+  }, {
+    "@id" : "_:genid29"
+  }, {
+    "@id" : "_:genid30"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#FacultyLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://obis.lumii.lv/2013/01/obis#defaultOrder" : [ {
+    "@value" : "acadTitle"
+  } ],
+  "http://obis.lumii.lv/2013/01/obis#isEnumerated" : [ {
+    "@value" : "true"
+  } ],
+  "http://obis.lumii.lv/2013/01/obis#textPattern" : [ {
+    "@value" : "{nCode} - {nValue}"
+  } ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "Teacher_Level {uri=('Level_', Level_Code)}"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid31"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Level_Assistant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Level_Professor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#MandatoryCourse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "[[Course]]; Required=1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Course"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#OptionalCourse"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Nationality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://obis.lumii.lv/2013/01/obis#defaultOrder" : [ {
+    "@value" : "nCode,nValue"
+  } ],
+  "http://obis.lumii.lv/2013/01/obis#isEnumerated" : [ {
+    "@value" : "true"
+  } ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "Nationality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid32"
+  }, {
+    "@id" : "_:genid33"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#OptionalCourse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "[[Course]]; Required=0"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Course"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://obis.lumii.lv/2013/01/obis#defaultOrder" : [ {
+    "@value" : "personName,personID,nationality"
+  } ],
+  "http://obis.lumii.lv/2013/01/obis#isAbstract" : [ {
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid34"
+  }, {
+    "@id" : "_:genid35"
+  }, {
+    "@id" : "_:genid36"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Professor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "[[Teacher]];Level_Code='Professor'"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Teacher"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid37"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Registration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://obis.lumii.lv/2013/01/obis#defaultOrder" : [ {
+    "@value" : "datePaid"
+  } ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "Registration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid41"
+  }, {
+    "@id" : "_:genid42"
+  }, {
+    "@id" : "_:genid43"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Student",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://obis.lumii.lv/2013/01/obis#defaultOrder" : [ {
+    "@value" : "studentName,studentNumber"
+  } ],
+  "http://obis.lumii.lv/2013/01/obis#textPattern" : [ {
+    "@value" : "{studentName}"
+  } ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "XStudent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Person"
+  }, {
+    "@id" : "_:genid44"
+  }, {
+    "@id" : "_:genid45"
+  }, {
+    "@id" : "_:genid46"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Teacher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://obis.lumii.lv/2013/01/obis#defaultOrder" : [ {
+    "@value" : "teacherName,salary,facultyLevel"
+  } ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "XTeacher"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Person"
+  }, {
+    "@id" : "_:genid47"
+  }, {
+    "@id" : "_:genid48"
+  }, {
+    "@id" : "_:genid49"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#acadTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "Level_Code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#FacultyLevel"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#course",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "->"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Registration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Course"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#courseCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "Code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Course"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#courseCredits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "Credits"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Course"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#courseExtInfo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "buildExtInfo(Code,Credits)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Course"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#courseName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "Name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Course"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#dateCompleted",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "DateCompleted"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#CompletedRegistration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#datePaid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "DatePaid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Registration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#enrolled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "->"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Student"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#facultyLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "->"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Teacher"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#FacultyLevel"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#includes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "=>"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Course"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#mark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "MarkReceived"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#CompletedRegistration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#nCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "Code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Nationality"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#nValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "Value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Nationality"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#nationality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "[[Student]]->"
+  }, {
+    "@value" : "[[Teacher]]->"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Nationality"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#personID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "[[Student]].IDCode"
+  }, {
+    "@value" : "[[Teacher]].IDCode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Person"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#personName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://obis.lumii.lv/2013/01/obis#isDerived" : [ {
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Person"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#programName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "Name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#AcademicProgram"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#salary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "Salary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Teacher"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#student",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "->"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Registration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Student"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#studentName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "Name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Student"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#personName"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#studentNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "StudNumber"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Student"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#takes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "=>Registration:(DatePaid is not null)->"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Student"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Course"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#teaches"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#teacherName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "Name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Teacher"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#personName"
+  } ]
+}, {
+  "@id" : "http://lumii.lv/ontologies/UnivExample.owl#teaches",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr" : [ {
+    "@value" : "->"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Teacher"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://lumii.lv/ontologies/UnivExample.owl#Course"
+  } ]
+}, {
+  "@id" : "http://obis.lumii.lv/2013/01/obis#defaultOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://obis.lumii.lv/2013/01/obis#isAbstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://obis.lumii.lv/2013/01/obis#isDerived",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://obis.lumii.lv/2013/01/obis#isEnumerated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://obis.lumii.lv/2013/01/obis#textPattern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://rdb2owl.lumii.lv/2012/1.0/rdb2owl#DBExpr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#Comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#Thing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]
